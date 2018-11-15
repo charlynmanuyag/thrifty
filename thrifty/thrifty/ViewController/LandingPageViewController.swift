@@ -10,6 +10,8 @@ import UIKit
 
 class LandingPageViewController: UIViewController {
 
+    @IBAction func LogInButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
