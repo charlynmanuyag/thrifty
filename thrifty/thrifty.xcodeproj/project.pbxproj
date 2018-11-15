@@ -20,8 +20,9 @@
 		CA2D89012193E1E600ECB505 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2D89002193E1E600ECB505 /* AddItemViewController.swift */; };
 		CA58958F219CDCE80042286A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58958E219CDCE80042286A /* GradientView.swift */; };
 		CA664D6E219CE02400F65135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA664D6D219CE02400F65135 /* Assets.xcassets */; };
-		CA664D70219CE26100F65135 /* loginSignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA664D6F219CE26100F65135 /* loginSignupButton.swift */; };
+		CA664D70219CE26100F65135 /* LoginSignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA664D6F219CE26100F65135 /* LoginSignupButton.swift */; };
 		CA664D72219CEE9800F65135 /* LoginSignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA664D71219CEE9800F65135 /* LoginSignupTextField.swift */; };
+		CA8EF7EE219D0D0E0099F185 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8EF7ED219D0D0E0099F185 /* GradientButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,9 @@
 		CA2D89002193E1E600ECB505 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		CA58958E219CDCE80042286A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		CA664D6D219CE02400F65135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA664D6F219CE26100F65135 /* loginSignupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSignupButton.swift; sourceTree = "<group>"; };
+		CA664D6F219CE26100F65135 /* LoginSignupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupButton.swift; sourceTree = "<group>"; };
 		CA664D71219CEE9800F65135 /* LoginSignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupTextField.swift; sourceTree = "<group>"; };
+		CA8EF7ED219D0D0E0099F185 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,8 @@
 				CA2D88E02193DB3A00ECB505 /* Main.storyboard */,
 				CA664D71219CEE9800F65135 /* LoginSignupTextField.swift */,
 				CA58958E219CDCE80042286A /* GradientView.swift */,
-				CA664D6F219CE26100F65135 /* loginSignupButton.swift */,
+				CA8EF7ED219D0D0E0099F185 /* GradientButton.swift */,
+				CA664D6F219CE26100F65135 /* LoginSignupButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,13 +203,14 @@
 				CA2D88F42193DF0400ECB505 /* LoginViewController.swift in Sources */,
 				CA2D88FA2193E08200ECB505 /* SignupCycleSurveyViewController.swift in Sources */,
 				CA58958F219CDCE80042286A /* GradientView.swift in Sources */,
-				CA664D70219CE26100F65135 /* loginSignupButton.swift in Sources */,
+				CA664D70219CE26100F65135 /* LoginSignupButton.swift in Sources */,
 				CA2D88FF2193E1DD00ECB505 /* HomePageViewController.swift in Sources */,
 				CA2D88F62193DF0C00ECB505 /* SignupViewController.swift in Sources */,
 				CA2D89012193E1E600ECB505 /* AddItemViewController.swift in Sources */,
 				CA2D88EF2193DE5000ECB505 /* LandingPageViewController.swift in Sources */,
 				CA2D88DD2193DB3A00ECB505 /* AppDelegate.swift in Sources */,
 				CA664D72219CEE9800F65135 /* LoginSignupTextField.swift in Sources */,
+				CA8EF7EE219D0D0E0099F185 /* GradientButton.swift in Sources */,
 				CA2D88F82193E07300ECB505 /* SignupWelcomeSurveyViewController.swift in Sources */,
 				CA2D88FC2193E08C00ECB505 /* SignupBudgetSurveyViewController.swift in Sources */,
 			);
