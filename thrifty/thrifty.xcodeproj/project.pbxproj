@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38E9A02421AD33E700C2DE52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */; };
+		7A8AD52F733FEAEC4BB369C2 /* Pods_thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470CD23F02A716320D29492D /* Pods_thrifty.framework */; };
 		CA2D88DD2193DB3A00ECB505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2D88DC2193DB3A00ECB505 /* AppDelegate.swift */; };
 		CA2D88E22193DB3A00ECB505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2D88E02193DB3A00ECB505 /* Main.storyboard */; };
 		CA2D88E72193DB3C00ECB505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2D88E52193DB3C00ECB505 /* LaunchScreen.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8D38AD5E2837E1644FAEE6 /* Pods-thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-thrifty/Pods-thrifty.release.xcconfig"; sourceTree = "<group>"; };
+		38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		470CD23F02A716320D29492D /* Pods_thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2D88D92193DB3A00ECB505 /* thrifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2D88DC2193DB3A00ECB505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA2D88E12193DB3A00ECB505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		CA664D6F219CE26100F65135 /* LoginSignupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupButton.swift; sourceTree = "<group>"; };
 		CA664D71219CEE9800F65135 /* LoginSignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupTextField.swift; sourceTree = "<group>"; };
 		CA8EF7ED219D0D0E0099F185 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		D1DD11D4D7CF4F26AC58EC4C /* Pods-thrifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrifty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thrifty/Pods-thrifty.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8AD52F733FEAEC4BB369C2 /* Pods_thrifty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6E47DDE797FBBB5F2616627 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1DD11D4D7CF4F26AC58EC4C /* Pods-thrifty.debug.xcconfig */,
+				1D8D38AD5E2837E1644FAEE6 /* Pods-thrifty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C634EFED06EB854EC291E0BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				470CD23F02A716320D29492D /* Pods_thrifty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA2D88D02193DB3900ECB505 = {
 			isa = PBXGroup;
 			children = (
 				CA2D88DB2193DB3A00ECB505 /* thrifty */,
 				CA2D88DA2193DB3A00ECB505 /* Products */,
+				B6E47DDE797FBBB5F2616627 /* Pods */,
+				C634EFED06EB854EC291E0BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +109,7 @@
 				CA664D6D219CE02400F65135 /* Assets.xcassets */,
 				CA2D88E52193DB3C00ECB505 /* LaunchScreen.storyboard */,
 				CA2D88E82193DB3C00ECB505 /* Info.plist */,
+				38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */,
 			);
 			path = thrifty;
 			sourceTree = "<group>";
@@ -136,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA2D88EB2193DB3C00ECB505 /* Build configuration list for PBXNativeTarget "thrifty" */;
 			buildPhases = (
+				50918428B98A05F8208FCABF /* [CP] Check Pods Manifest.lock */,
 				CA2D88D52193DB3A00ECB505 /* Sources */,
 				CA2D88D62193DB3A00ECB505 /* Frameworks */,
 				CA2D88D72193DB3A00ECB505 /* Resources */,
+				1B54581E77571A74D14F67ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,12 +217,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2D88E72193DB3C00ECB505 /* LaunchScreen.storyboard in Resources */,
+				38E9A02421AD33E700C2DE52 /* GoogleService-Info.plist in Resources */,
 				CA664D6E219CE02400F65135 /* Assets.xcassets in Resources */,
 				CA2D88E22193DB3A00ECB505 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B54581E77571A74D14F67ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-thrifty/Pods-thrifty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thrifty/Pods-thrifty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50918428B98A05F8208FCABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thrifty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA2D88D52193DB3A00ECB505 /* Sources */ = {
@@ -354,6 +433,7 @@
 		};
 		CA2D88EC2193DB3C00ECB505 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1DD11D4D7CF4F26AC58EC4C /* Pods-thrifty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -371,6 +451,7 @@
 		};
 		CA2D88ED2193DB3C00ECB505 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8D38AD5E2837E1644FAEE6 /* Pods-thrifty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
