@@ -9,9 +9,16 @@
 import UIKit
 
 class SignupWelcomeSurveyViewController: UIViewController {
-
+    @IBOutlet weak var WelcomeSign: UITextView!
+    
+    var name: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if name == nil {
+            name = ""
+        }
+        WelcomeSign.text = "Welcome " + name + "!"
 
         // Do any additional setup after loading the view.
     }

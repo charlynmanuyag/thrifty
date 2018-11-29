@@ -82,6 +82,13 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SignupToWelcome" {
+            let dest = segue.destination as! SignupWelcomeSurveyViewController
+            dest.name = first
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.firstName.delegate = self

@@ -10,6 +10,22 @@ import UIKit
 
 class SignupCycleSurveyViewController: UIViewController {
 
+    @IBOutlet weak var startDate: LoginSignupTextField!
+    @IBOutlet weak var endDate: LoginSignupTextField!
+    
+    var Start = ""
+    var End = ""
+    
+    let currentUser = CurrentUser()
+    
+    @IBAction func signupPressed(_ sender: Any) {
+        // TODO: empty date checks and date format!
+        
+        currentUser.setCycleDates(startDate: startDate.text as! String, endDate: endDate.text as! String)
+        
+        performSegue(withIdentifier: "CycleToBudget", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +38,17 @@ class SignupCycleSurveyViewController: UIViewController {
     }
     
 
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == self.startDate {
+            if textField.text != nil {
+                self.Start = textField.text!
+            }
+        } else {
+            if textField.text != nil {
+                self.End = textField.text!
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

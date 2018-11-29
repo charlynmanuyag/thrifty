@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3885E82321AF8C580087A9AB /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885E82221AF8C580087A9AB /* CurrentUser.swift */; };
 		38E9A02421AD33E700C2DE52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */; };
 		7A8AD52F733FEAEC4BB369C2 /* Pods_thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470CD23F02A716320D29492D /* Pods_thrifty.framework */; };
 		CA2D88DD2193DB3A00ECB505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2D88DC2193DB3A00ECB505 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1D8D38AD5E2837E1644FAEE6 /* Pods-thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-thrifty/Pods-thrifty.release.xcconfig"; sourceTree = "<group>"; };
+		3885E82221AF8C580087A9AB /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = SOURCE_ROOT; };
 		38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		470CD23F02A716320D29492D /* Pods_thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2D88D92193DB3A00ECB505 /* thrifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 		CA2D88F12193DE6D00ECB505 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3885E82221AF8C580087A9AB /* CurrentUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				CA664D72219CEE9800F65135 /* LoginSignupTextField.swift in Sources */,
 				CA8EF7EE219D0D0E0099F185 /* GradientButton.swift in Sources */,
 				CA2D88F82193E07300ECB505 /* SignupWelcomeSurveyViewController.swift in Sources */,
+				3885E82321AF8C580087A9AB /* CurrentUser.swift in Sources */,
 				CA2D88FC2193E08C00ECB505 /* SignupBudgetSurveyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,22 +1,17 @@
 //
-//  HomePageViewController.swift
+//  CurrentUser.swift
 //  thrifty
 //
-//  Created by Kevin Wang on 11/7/18.
+//  Created by Charlyn Manuyag on 11/28/18.
 //  Copyright © 2018 Kevin Wang. All rights reserved.
 //
 
 import UIKit
 
-class HomePageViewController: UIViewController {
+class CurrentUser: UIViewController {
 
-    @IBOutlet weak var GoalText: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        GoalText.layer.cornerRadius = GoalText.frame.size.height/2
-        GoalText.clipsToBounds = false
-        GoalText.layer.shadowOpacity=0.4
-        GoalText.layer.shadowOffset = CGSize(width: 5, height: 5)
 
         // Do any additional setup after loading the view.
     }
