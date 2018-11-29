@@ -10,6 +10,13 @@ import UIKit
 
 class AddItemViewController: UIViewController {
 
+    @IBOutlet weak var Item: LoginSignupTextField!
+    @IBOutlet weak var Cost: LoginSignupTextField!
+    @IBOutlet weak var Category: LoginSignupTextField!
+    @IBOutlet weak var Notes: LoginSignupTextField!
+    
+    @IBAction func nextWasPressed(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

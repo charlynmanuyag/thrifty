@@ -28,4 +28,11 @@ class CurrentUser {
         dbRef.child("Users").child(id).child("cycleDates").child("startDate").setValue(startDate)
         dbRef.child("Users").child(id).child("cycleDates").child("endDate").setValue(endDate)
     }
+    
+    // TODO: change to float
+    func setTotalBudget(amount: String) {
+        // YOUR CODE HERE
+        dbRef.child("Users").child(id).child("cycleBudget").child("totalBudget").setValue(amount)
+    }
+    
 }

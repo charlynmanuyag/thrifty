@@ -10,6 +10,26 @@ import UIKit
 
 class SignupBudgetSurveyViewController: UIViewController {
 
+    @IBOutlet weak var EnterBudget: LoginSignupTextField!
+    var amount = ""
+    let currentUser = CurrentUser()
+    
+    @IBAction func signUpPressed(_ sender: Any) {
+        // TODO: convert budget to float
+        amount = EnterBudget.text as! String
+        print(EnterBudget.text)
+        currentUser.setTotalBudget(amount: EnterBudget.text as! String)
+        
+        performSegue(withIdentifier: "CycleSurveyToHome", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CycleSurveyToHome" {
+            let dest = segue.destination as! HomePageViewController
+                dest.budget = amount
+        }
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +41,13 @@ class SignupBudgetSurveyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == self.EnterBudget {
+            if textField.text != nil {
+                self.amount = textField.text!
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

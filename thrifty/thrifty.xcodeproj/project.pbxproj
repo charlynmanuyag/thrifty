@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3805A57D21AFA29C00CAFBCE /* CategoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A57C21AFA29C00CAFBCE /* CategoryTableView.swift */; };
+		3805A57F21AFA31600CAFBCE /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A57E21AFA31600CAFBCE /* CategoryTableViewCell.swift */; };
+		3805A58121AFA4BD00CAFBCE /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A58021AFA4BD00CAFBCE /* Categories.swift */; };
 		3885E82321AF8C580087A9AB /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885E82221AF8C580087A9AB /* CurrentUser.swift */; };
 		38E9A02421AD33E700C2DE52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */; };
 		7A8AD52F733FEAEC4BB369C2 /* Pods_thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470CD23F02A716320D29492D /* Pods_thrifty.framework */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		1D8D38AD5E2837E1644FAEE6 /* Pods-thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-thrifty/Pods-thrifty.release.xcconfig"; sourceTree = "<group>"; };
+		3805A57C21AFA29C00CAFBCE /* CategoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableView.swift; sourceTree = "<group>"; };
+		3805A57E21AFA31600CAFBCE /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		3805A58021AFA4BD00CAFBCE /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		3885E82221AF8C580087A9AB /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = SOURCE_ROOT; };
 		38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		470CD23F02A716320D29492D /* Pods_thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				3885E82221AF8C580087A9AB /* CurrentUser.swift */,
+				3805A58021AFA4BD00CAFBCE /* Categories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				CA2D88E02193DB3A00ECB505 /* Main.storyboard */,
+				3805A57E21AFA31600CAFBCE /* CategoryTableViewCell.swift */,
+				3805A57C21AFA29C00CAFBCE /* CategoryTableView.swift */,
 				CA664D71219CEE9800F65135 /* LoginSignupTextField.swift */,
 				CA58958E219CDCE80042286A /* GradientView.swift */,
 				CA8EF7ED219D0D0E0099F185 /* GradientButton.swift */,
@@ -282,12 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3805A57D21AFA29C00CAFBCE /* CategoryTableView.swift in Sources */,
 				CA2D88F42193DF0400ECB505 /* LoginViewController.swift in Sources */,
 				CA2D88FA2193E08200ECB505 /* SignupCycleSurveyViewController.swift in Sources */,
 				CA58958F219CDCE80042286A /* GradientView.swift in Sources */,
+				3805A58121AFA4BD00CAFBCE /* Categories.swift in Sources */,
 				CA664D70219CE26100F65135 /* LoginSignupButton.swift in Sources */,
 				CA2D88FF2193E1DD00ECB505 /* HomePageViewController.swift in Sources */,
 				CA2D88F62193DF0C00ECB505 /* SignupViewController.swift in Sources */,
+				3805A57F21AFA31600CAFBCE /* CategoryTableViewCell.swift in Sources */,
 				CA2D89012193E1E600ECB505 /* AddItemViewController.swift in Sources */,
 				CA2D88EF2193DE5000ECB505 /* LandingPageViewController.swift in Sources */,
 				CA2D88DD2193DB3A00ECB505 /* AppDelegate.swift in Sources */,
