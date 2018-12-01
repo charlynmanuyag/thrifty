@@ -17,7 +17,6 @@ class SignupBudgetSurveyViewController: UIViewController {
     @IBAction func signUpPressed(_ sender: Any) {
         // TODO: convert budget to float
         amount = EnterBudget.text as! String
-        print(EnterBudget.text)
         currentUser.setTotalBudget(amount: EnterBudget.text as! String)
         
         performSegue(withIdentifier: "CycleSurveyToHome", sender: nil)

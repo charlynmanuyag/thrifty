@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.present(alertController, animated: true, completion: nil)
         }
         else {
-            Auth.auth().signIn(withEmail: userEmail, password: userPassword) { (user, error) in
+            Auth.auth().signIn(withEmail: Username.text as! String, password: Password.text as! String) { (user, error) in
                 if error == nil {
                     self.performSegue(withIdentifier: "LoginToHomePage", sender: self)
                 }

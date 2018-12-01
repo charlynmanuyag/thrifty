@@ -9,7 +9,7 @@
 import UIKit
 
 class SignupWelcomeSurveyViewController: UIViewController {
-    @IBOutlet weak var WelcomeSign: UITextView!
+    @IBOutlet weak var WelcomeSign: UILabel!
     
     var name: String!
     
