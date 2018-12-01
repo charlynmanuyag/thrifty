@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class HomePageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBAction func refreshButtonPressed(_ sender: Any) {
@@ -64,19 +65,17 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
             cell.AmountLabel.text = "$" + categoryAmount
         })
         
-//        cell.AmountLabel.text = CategoryAmount
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCategory = Categories.categoryDict[indexPath.row]
-        performSegue(withIdentifier: "HomeToAddNew", sender: nil)
+        performSegue(withIdentifier: "HomeToItemList", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "HomeToAddNew" {
-            let dest = segue.destination as! AddItemViewController
+        if segue.identifier == "HomeToItemList" {
+            let dest = segue.destination as! ItemsViewController
             dest.category = selectedCategory
         }
     }

@@ -117,6 +117,7 @@ class CurrentUser {
             completion(categoryAmount)
         }
     }
+    
     func getCycleLength(completion: @escaping (Int) -> Void) {
         var cycleLength = 0
         let cycleLengthRef = dbRef.child("Users").child(id).child("cycleLength")
@@ -130,4 +131,23 @@ class CurrentUser {
         }
     }
     
+    func getCategoryItems(category: String!, completion: @escaping ([CategoryItem]) -> Void) {
+        var categoryItems: [CategoryItem] = []
+        let categoryItemRef = dbRef.child("Users").child(id).child(category)
+        categoryItemRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if snapshot.exists() {
+                if let dict = snapshot.value as? [String: Any] {
+                    for (key, value) in dict {
+//                        print(key, value)
+                        if let itemDict = value as? [String : Any] {
+                            print(itemDict)
+                            let categoryItem = CategoryItem(itemName: itemDict["item"] as! String, itemCost: itemDict["cost"] as! String, itemNotes: itemDict["notes"] as! String)
+                            categoryItems.append(categoryItem)
+                        }
+                    }
+                }
+            }
+            completion(categoryItems)
+    }
+    )}
 }

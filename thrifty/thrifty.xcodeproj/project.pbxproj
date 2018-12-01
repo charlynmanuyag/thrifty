@@ -12,6 +12,10 @@
 		3805A58121AFA4BD00CAFBCE /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805A58021AFA4BD00CAFBCE /* Categories.swift */; };
 		3885E82321AF8C580087A9AB /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885E82221AF8C580087A9AB /* CurrentUser.swift */; };
 		38E9A02421AD33E700C2DE52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */; };
+		38F0068621B2313B00351FCE /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F0068521B2313B00351FCE /* ItemsViewController.swift */; };
+		38F0068821B232E900351FCE /* ItemTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F0068721B232E900351FCE /* ItemTableView.swift */; };
+		38F0068A21B232FC00351FCE /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F0068921B232FC00351FCE /* ItemTableViewCell.swift */; };
+		38F0068C21B2367F00351FCE /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F0068B21B2367F00351FCE /* CategoryItem.swift */; };
 		7A8AD52F733FEAEC4BB369C2 /* Pods_thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470CD23F02A716320D29492D /* Pods_thrifty.framework */; };
 		CA2D88DD2193DB3A00ECB505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2D88DC2193DB3A00ECB505 /* AppDelegate.swift */; };
 		CA2D88E22193DB3A00ECB505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2D88E02193DB3A00ECB505 /* Main.storyboard */; };
@@ -31,6 +35,19 @@
 		CA8EF7EE219D0D0E0099F185 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8EF7ED219D0D0E0099F185 /* GradientButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		38A8571021B2134A008A17CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1D8D38AD5E2837E1644FAEE6 /* Pods-thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-thrifty/Pods-thrifty.release.xcconfig"; sourceTree = "<group>"; };
 		3805A57C21AFA29C00CAFBCE /* CategoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableView.swift; sourceTree = "<group>"; };
@@ -38,6 +55,10 @@
 		3805A58021AFA4BD00CAFBCE /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		3885E82221AF8C580087A9AB /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = SOURCE_ROOT; };
 		38E9A02321AD33E700C2DE52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		38F0068521B2313B00351FCE /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		38F0068721B232E900351FCE /* ItemTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableView.swift; sourceTree = "<group>"; };
+		38F0068921B232FC00351FCE /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		38F0068B21B2367F00351FCE /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		470CD23F02A716320D29492D /* Pods_thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2D88D92193DB3A00ECB505 /* thrifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2D88DC2193DB3A00ECB505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +146,7 @@
 		CA2D88F02193DE5C00ECB505 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				38F0068521B2313B00351FCE /* ItemsViewController.swift */,
 				CA2D88EE2193DE5000ECB505 /* LandingPageViewController.swift */,
 				CA2D88F32193DF0400ECB505 /* LoginViewController.swift */,
 				CA2D88FE2193E1DD00ECB505 /* HomePageViewController.swift */,
@@ -138,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3885E82221AF8C580087A9AB /* CurrentUser.swift */,
+				38F0068B21B2367F00351FCE /* CategoryItem.swift */,
 				3805A58021AFA4BD00CAFBCE /* Categories.swift */,
 			);
 			path = Model;
@@ -147,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				CA2D88E02193DB3A00ECB505 /* Main.storyboard */,
+				38F0068721B232E900351FCE /* ItemTableView.swift */,
+				38F0068921B232FC00351FCE /* ItemTableViewCell.swift */,
 				3805A57E21AFA31600CAFBCE /* CategoryTableViewCell.swift */,
 				3805A57C21AFA29C00CAFBCE /* CategoryTableView.swift */,
 				CA664D71219CEE9800F65135 /* LoginSignupTextField.swift */,
@@ -180,6 +205,7 @@
 				CA2D88D62193DB3A00ECB505 /* Frameworks */,
 				CA2D88D72193DB3A00ECB505 /* Resources */,
 				1B54581E77571A74D14F67ED /* [CP] Embed Pods Frameworks */,
+				38A8571021B2134A008A17CD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,9 +327,13 @@
 				CA2D88F62193DF0C00ECB505 /* SignupViewController.swift in Sources */,
 				3805A57F21AFA31600CAFBCE /* CategoryTableViewCell.swift in Sources */,
 				CA2D89012193E1E600ECB505 /* AddItemViewController.swift in Sources */,
+				38F0068C21B2367F00351FCE /* CategoryItem.swift in Sources */,
 				CA2D88EF2193DE5000ECB505 /* LandingPageViewController.swift in Sources */,
 				CA2D88DD2193DB3A00ECB505 /* AppDelegate.swift in Sources */,
+				38F0068A21B232FC00351FCE /* ItemTableViewCell.swift in Sources */,
 				CA664D72219CEE9800F65135 /* LoginSignupTextField.swift in Sources */,
+				38F0068821B232E900351FCE /* ItemTableView.swift in Sources */,
+				38F0068621B2313B00351FCE /* ItemsViewController.swift in Sources */,
 				CA8EF7EE219D0D0E0099F185 /* GradientButton.swift in Sources */,
 				CA2D88F82193E07300ECB505 /* SignupWelcomeSurveyViewController.swift in Sources */,
 				3885E82321AF8C580087A9AB /* CurrentUser.swift in Sources */,

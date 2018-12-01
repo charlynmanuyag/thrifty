@@ -42,6 +42,10 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goBackToItemsList(_ sender: Any) {
+        performSegue(withIdentifier: "unwindToItemsListSegue", sender: self)
+    }
+    
 
     /*
     // MARK: - Navigation
